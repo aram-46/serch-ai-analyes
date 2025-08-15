@@ -13,14 +13,14 @@ const ThemeSwitcher: React.FC<{ onThemeChange: (theme: Theme) => void }> = ({ on
     <div className="relative group">
        <button className="flex items-center gap-2 px-3 py-2 bg-base-300/50 rounded-lg text-text-secondary hover:bg-base-300 hover:text-text-primary transition-all duration-200">
            <Icon name="theme" className="w-5 h-5"/>
-           <span className="hidden sm:inline">Theme</span>
+           <span className="hidden sm:inline">پوسته</span>
        </button>
-       <div className="absolute right-0 mt-2 w-48 bg-base-200 border border-base-300 rounded-lg shadow-xl p-2 z-20 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-300">
+       <div className="absolute left-0 mt-2 w-48 bg-base-200 border border-base-300 rounded-lg shadow-xl p-2 z-20 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-300">
            {THEMES.map((theme) => (
                <button
                    key={theme.name}
                    onClick={() => onThemeChange(theme)}
-                   className="w-full text-left px-3 py-2 rounded-md hover:bg-base-300 text-text-secondary hover:text-text-primary flex items-center gap-3 transition-colors"
+                   className="w-full text-right px-3 py-2 rounded-md hover:bg-base-300 text-text-secondary hover:text-text-primary flex items-center gap-3 transition-colors"
                >
                   <span className="w-4 h-4 rounded-full" style={{ backgroundColor: theme.colors['--color-primary'] }}></span>
                   {theme.name}
@@ -40,7 +40,7 @@ const Header: React.FC<HeaderProps> = ({ onThemeChange }) => {
             <Icon name="chart" className="w-6 h-6 text-white"/>
         </div>
         <h1 className="text-xl md:text-2xl font-bold text-text-primary">
-          AI Statistical Analyst
+          تحلیلگر آماری هوش مصنوعی
         </h1>
       </div>
       <ThemeSwitcher onThemeChange={onThemeChange} />

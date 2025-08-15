@@ -1,11 +1,13 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gemini AI Statistical Analyst</title>
+    <title>تحلیلگر آماری هوش مصنوعی</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -23,7 +25,14 @@
             },
             backgroundImage: {
                'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-            }
+            },
+            fontFamily: {
+              sans: ['Vazirmatn', 'sans-serif'],
+            },
+            boxShadow: {
+              'neon-accent': '0 0 3px var(--color-accent), 0 0 6px var(--color-accent), inset 0 0 3px var(--color-accent)',
+              'neon-primary': '0 0 3px var(--color-primary), 0 0 6px var(--color-primary), inset 0 0 3px var(--color-primary)',
+            },
           }
         }
       }
@@ -43,7 +52,6 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
 </head>
   <body>
     <div id="root"></div>

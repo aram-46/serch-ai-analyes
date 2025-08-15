@@ -8,6 +8,8 @@ export interface SearchQuery {
   region2: string;
   subject: string;
   userSources: string;
+  emphasis: string;
+  exclusions: string;
 }
 
 export interface StatisticalSource {
@@ -28,6 +30,12 @@ export interface RelatedResearch {
   summary: string;
   source: string;
   link: string;
+  year: string;
+  credibilityScore: number;
+  credibilityAnalysis: string;
+  isStillValid: boolean;
+  proponentViews: string;
+  opposingViews: string;
 }
 
 export interface VisualDataPoint {
@@ -41,6 +49,7 @@ export interface SearchResult {
   visualData: VisualDataPoint[];
   sources: StatisticalSource[];
   relatedResearch: RelatedResearch[];
+  suggestedQueries: string[];
 }
 
 export type Theme = {

@@ -2,20 +2,33 @@
 import type { Theme } from './types';
 
 export const COUNTRIES = [
-  'Iran', 'Saudi Arabia', 'Russia', 'China', 'South Korea', 'North Korea',
-  'Middle East', 'Islamic Countries', 'Asia', 'Europe', 'USA', 'South America',
-  'Western Countries', 'Whole World'
+  'ایران', 'عربستان سعودی', 'روسیه', 'چین', 'کره جنوبی', 'کره شمالی',
+  'خاورمیانه', 'کشورهای اسلامی', 'آسیا', 'اروپا', 'آمریکا', 'آمریکای جنوبی',
+  'کشورهای غربی', 'کل جهان'
 ];
 
 export const SUBJECTS = [
-  'History', 'Religion', 'General', 'Social', 'Humanities', 'Geography',
-  'Psychology', 'Physics', 'Geology', 'Medicine', 'Social Harm', 'Racial Issues',
-  'Separatism', 'Comparative Religion', 'Pseudoscience', 'Superstitions',
-  'Poverty', 'Sexual Abuse', 'Marital Relations', 'Economics', 'Corruption',
-  'Sexuality', 'Pornography', 'Cinema', 'Income'
+  'تاریخ', 'دین', 'عمومی', 'اجتماعی', 'علوم انسانی', 'جغرافیا',
+  'روانشناسی', 'فیزیک', 'زمین شناسی', 'پزشکی', 'آسیب های اجتماعی', 'مسائل نژادی',
+  'جدایی طلبی', 'ادیان تطبیقی', 'شبه علم', 'خرافات',
+  'فقر', 'آزار جنسی', 'روابط زناشویی', 'اقتصاد', 'فساد',
+  'مسائل جنسی', 'پورنوگرافی', 'سینما', 'درآمد'
 ];
 
 export const THEMES: Theme[] = [
+    {
+        name: 'Neon Abstract',
+        colors: {
+            '--color-primary': '#f0f',
+            '--color-secondary': '#6a0dad',
+            '--color-accent': '#0ff',
+            '--color-base-100': '#0d0c1d',
+            '--color-base-200': '#1a1a3d',
+            '--color-base-300': '#2c2c54',
+            '--color-text-primary': '#f0f0f0',
+            '--color-text-secondary': '#a0a0c0',
+        },
+    },
     {
         name: 'Indigo Dream',
         colors: {
@@ -53,32 +66,6 @@ export const THEMES: Theme[] = [
             '--color-base-300': '#3a634d',
             '--color-text-primary': '#f0fff4',
             '--color-text-secondary': '#c6f6d5',
-        },
-    },
-    {
-        name: 'Royal Purple',
-        colors: {
-            '--color-primary': '#805ad5',
-            '--color-secondary': '#6b46c1',
-            '--color-accent': '#d6bcfa',
-            '--color-base-100': '#241b3a',
-            '--color-base-200': '#3d2c5a',
-            '--color-base-300': '#573d7a',
-            '--color-text-primary': '#f7fafc',
-            '--color-text-secondary': '#e9d8fd',
-        },
-    },
-    {
-        name: 'Golden Hour',
-        colors: {
-            '--color-primary': '#dd6b20',
-            '--color-secondary': '#c05621',
-            '--color-accent': '#fbd38d',
-            '--color-base-100': '#382b1c',
-            '--color-base-200': '#5c462e',
-            '--color-base-300': '#7f6141',
-            '--color-text-primary': '#fffff0',
-            '--color-text-secondary': '#fde68a',
         },
     },
 ];
