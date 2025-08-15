@@ -1,0 +1,5 @@
+{
+  "name": "Gemini AI Statistical Analyst",
+  "description": "An advanced web application to search for, compare, and visualize statistical data from around the world. Leveraging the Gemini API, it provides in-depth analysis, source validation, and customizable data presentation.",
+  "requestFramePermissions": []
+}
